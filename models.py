@@ -11,7 +11,6 @@ class Item(BaseModel):
     volume: int
     supplierId: int
     pics: int
-    image_links: str = None
 
     @root_validator(pre=True)
     def convert_sale_price(cls, values: dict):
